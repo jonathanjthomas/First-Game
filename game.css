@@ -1,0 +1,47 @@
+#bear {
+    position: absolute;
+    left: 100px;
+    /*top: 240px;*/
+    width: 10%;
+    
+}
+
+#board {
+    position: absolute;
+    /*CHANGE 2 - Making height and width in percentages*/
+    height: 70%;
+    width: 100%;
+    background-color: rgb(6, 136, 119);
+    align-content: center;
+    align-self: center;
+}
+
+#title {
+    background-color: rgb(128, 128, 128);
+    /*CHANGE 3 - Making height and width for title*/
+    height: 20%;
+    width: 100%;
+    align-content: center;
+    align-self: center;
+}
+
+#scores {
+    background-color: rgb(247, 134, 241);
+    /*CHANGE 3 - Making height and width for scores*/
+    height: 10%;
+    width: 100%;
+    align-content: center;
+    align-self: center;
+}
+
+.location {
+    color: green;
+}
+
+#hits {
+    color: red;
+}
+
+#duration {
+    color: blue;
+}
