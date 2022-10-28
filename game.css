@@ -19,7 +19,7 @@
 #title {
     background-color: rgb(128, 128, 128);
     /*CHANGE 3 - Making height and width for title*/
-    height: 20%;
+    height: 20%;    
     width: 100%;
     align-content: center;
     align-self: center;
@@ -45,3 +45,8 @@
 #duration {
     color: blue;
 }
+
+/*Removed the default margin*/
+* {
+    margin: 0;
+    }

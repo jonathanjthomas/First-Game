@@ -15,29 +15,35 @@
 
     <script> //Declare all global variables here, so that start() can find them
         var bear; //bear declaration
+        var bees; 
+        var updateTimer;
+        var lastStingTime;
     </script>
 </head>
     <body onload="start();">
 
         <div id="title">
             <h1>Help the bear escape the bees !</h1>
-            <p>Bear tries to avoid being stung by <input type="text" id="nbBees" value="1" size="3"> bees by running and jumping. The objective is to have as less stings as possible!</p>
-            <p>You can ajust bees' speed <input type="text" id="speedBees" value="50" size="3"> px/ms
-                <br> and the refresh period <input type="text" id="periodTimer" value="10" size="3"> ms </p>
+            <p>Bear tries to avoid being stung by <input type="text" id="nbBees" value="3" size="2"> bees by running and jumping. The objective is to have as less stings as possible!</p>
+            <p>You can ajust bees' speed <input type="text" id="speedBees" value="50" size="2"> px/ms
+                <br> and the refresh period <input type="text" id="periodTimer" value="10" size="2"> ms </p>
+            <p>Bear Speed: <input type="text" id="speedBear" value="100" size="2"></p>
             <h2>Press left, right, up, down keys to move the bear</h2>
 
         </div>
         <div id="scores">
-            <table>
+            <table  style="display:inline">
                 <tr>
                     <td>
                         <p>Stings: [<span id="hits">0</span>]</p>
                     </td>
                     <td>
                         <p>Best duration: [<span id="duration">?</span>]</p>
-                    </td>
+                    </td>                   
                 </tr>
             </table>
+            <button style="float:right; margin:2px 10px" onclick="start()">Restart</button>                   
+    
 
         </div>
         <div id="board">
